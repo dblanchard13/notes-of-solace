@@ -1,5 +1,7 @@
 # Notes of Solace
 
+A Next.js app running at: https://www.notes-of-solace.xyz/
+
 ## Setup
 
 ### Setting up the codebase
