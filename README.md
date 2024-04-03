@@ -84,7 +84,11 @@ npm run test
 
 - Patient association. Be able to associate notes with specific clients so that an Advocate can easily see all of their notes for each of their individual clients.
 
-- Tagging. Allow advocates to add `#tags` anywhere within the content of their notes that will automatically tie that note to all other notes that share the same tag
+- Tagging. Allow advocates to add `#tags` anywhere within the content of their notes that will automatically tie that note to all other notes that share the same tag which they can then filter by.
+
+- Semantic search. This would make search results much more relevant than the current version of does any of the content contain any of the words in the query.
+
+- Transition Animations. Everything currently 'snaps' into and out of their respective frames. Would be better to smooth that out with animations.
 
 - Rich text editor. I assume Advocates would like the ability to add more expressive formatting to their notes (bold, strikethrough, bullet points, etc.).
 
