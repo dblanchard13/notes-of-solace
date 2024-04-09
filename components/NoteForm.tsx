@@ -46,7 +46,11 @@ const NoteForm = ({ note }: Props) => {
   useEffect(() => {
     checkForErrors(content)
 
-    if (document.activeElement?.id !== 'search-bar') {
+    if (
+      !['search-bar', 'notepad-textarea'].includes(
+        document.activeElement?.id || ''
+      )
+    ) {
       textareaRef.current?.focus()
       textareaRef.current?.setSelectionRange(content.length, content.length)
     }
@@ -100,6 +104,7 @@ const NoteForm = ({ note }: Props) => {
           className="w-full h-full text-xl p-8 pt-4 bg-black outline-none"
           placeholder="Type your note here.."
           ref={textareaRef}
+          id="notepad-textarea"
         />
       </div>
       <div className="border-l border-white/10">
